@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Activity from "./components/Activity";
+import CustomerFeedback from "./components/CustomerFeedback";
+import HighlightsSection from "./components/HighlightsSection";
+import KeyMetrics from "./components/KeyMetrics";
+import NetProfit from "./components/NetProfit";
+import RecentOrders from "./components/RecentOrders";
+import SideBar from "./components/SideBar";
+import TopBar from "./components/TopBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex">
+        <SideBar />
+        <div className="flex flex-col">
+          <TopBar />
+          <div className="flex  mt-20">
+            <KeyMetrics />
+            <NetProfit />
+          </div>
+          <div className="flex">
+            <Activity />
+            <HighlightsSection />
+          </div>
+
+          <div className="flex">
+            <RecentOrders />
+            <CustomerFeedback />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
