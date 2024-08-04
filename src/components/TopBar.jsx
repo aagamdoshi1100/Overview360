@@ -7,7 +7,7 @@ import { faker } from "@faker-js/faker";
 
 const TopBar = () => {
   return (
-    <div className="all-menus bg-[rgba(32,32,40,255)] w-[100vw] h-14 flex justify-between fixed">
+    <div className="all-menus bg-[rgba(32,32,40,255)] w-[100vw] h-14 flex justify-between fixed z-10">
       <div className="left-menus">
         <span className="relative">
           <input
@@ -18,7 +18,7 @@ const TopBar = () => {
           <FiSearch className="absolute top-1 left-8 text-[#818283]" />
         </span>
       </div>
-      <div className="right-menus flex gap-2 items-center pr-4">
+      <div className="right-menus flex gap-2 items-center pr-8">
         <span className="rounded-full bg-[#444549] h-8 w-8 p-[6px] ">
           <MdMailOutline style={{ color: "#818283", fontSize: "1.2em" }} />
         </span>

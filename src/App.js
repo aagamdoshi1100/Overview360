@@ -10,21 +10,21 @@ import TopBar from "./components/TopBar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#141416]">
       <div className="flex">
         <SideBar />
         <div className="flex flex-col">
           <TopBar />
-          <div className="flex  mt-20">
+          <div className="flex flex-col w-[100vw] items-center mt-16 sm:flex-row">
             <KeyMetrics />
             <NetProfit />
           </div>
-          <div className="flex">
+          <div className="flex flex-col md:flex-row w-[100vw] items-center">
             <Activity />
             <HighlightsSection />
           </div>
 
-          <div className="flex">
+          <div className="flex flex-col w-[100vw] md:flex-row items-center">
             <RecentOrders />
             <CustomerFeedback />
           </div>

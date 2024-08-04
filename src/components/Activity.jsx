@@ -10,6 +10,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { faker } from "@faker-js/faker";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 ChartJS.register(
   CategoryScale,
@@ -73,11 +74,12 @@ export const data = {
 
 const Activity = () => {
   return (
-    <div className="activity bg-[#202028] ml-20 rounded-md mr-3 mb-3 w-[50vw] p-3">
+    <div className="activity bg-[#202028] w-[90vw] sm:w-[84vw] md:w-[50vw] p-3 mt-3 sm:ml-16 md:ml-20 rounded-md sm:mr-3 sm:mb-3 ">
       <div className="flex justify-between">
-        <h3 className="activity text-2xl font-bold text-white">Activity</h3>
-        <h4 className="text-xl p-2 border-1 border-gray-500 bg-[#4c4d52] inline-flex ">
+        <h3 className="activity text-xl font-bold text-white">Activity</h3>
+        <h4 className="text-sm text-white rounded-3xl p-1 px-3 border-1 border-gray-500 bg-[#4c4d52] inline-flex items-center justify-center">
           Weekly
+          <IoMdArrowDropdown className="m-1" />
         </h4>
       </div>
       <Bar options={options} data={data} />

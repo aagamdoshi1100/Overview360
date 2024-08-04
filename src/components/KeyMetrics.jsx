@@ -24,12 +24,13 @@ const metrics = [
 
 const KeyMetrics = () => {
   return (
-    <section className=" metrixes flex w-[50vw] ml-20 ">
+    <section className="metrixes flex flex-col md:flex-row w-[90vw] sm:w-[40vw] sm:ml-20 md:w-[50vw]">
+      {/* <p className="heading font-bold text-xl text-white mb-3">Dashboard</p> */}
       {metrics.map((data, i) => (
         <div
           key={data.cardName}
           className={`martixCard bg-[#202028] mb-3 p-3 text-white rounded-md flex flex-col flex-grow ${
-            i === 3 ? "" : "mr-3"
+            i === 3 ? "" : "md:mr-3"
           }`}
         >
           <p className="text-sm">{data.cardName}</p>

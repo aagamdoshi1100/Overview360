@@ -9,7 +9,7 @@ import { PiSquaresFourFill } from "react-icons/pi";
 
 const SideBar = () => {
   return (
-    <div className="all-menus bg-[rgba(32,32,40,255)] h-[100vh]  inline-flex flex-col justify-between items-center fixed">
+    <div className="all-menus hidden sm:bg-[rgba(32,32,40,255)] sm:h-[100vh] sm:inline-flex sm:flex-col sm:justify-between sm:items-center sm:fixed">
       <div className="top-menus flex flex-col gap-5 cursor-pointer">
         <span className="pt-3 px-3">
           <PiSquaresFourFill

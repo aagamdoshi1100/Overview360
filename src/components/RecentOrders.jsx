@@ -47,8 +47,10 @@ let recentPlacedOrders = [
 ];
 const RecentOrders = () => {
   return (
-    <div className="recent-orders p-3 bg-[#202028] w-[50vw] ml-20 mb-6 rounded-md">
-      <h3 className="heading text-white font-bold text-xl ">Recent Orders</h3>
+    <div className="recent-orders p-3 bg-[#202028] w-[90vw] sm:w-[84vw] md:w-[50vw] sm:mr-3 sm:ml-16 md:ml-20 mb-6 rounded-md">
+      <h3 className="heading text-white font-bold text-xl mb-3">
+        Recent Orders
+      </h3>
       <table className="customers">
         <thead>
           <tr>

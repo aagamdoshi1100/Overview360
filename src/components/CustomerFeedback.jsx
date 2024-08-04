@@ -43,8 +43,10 @@ const CustomerFeedback = () => {
     },
   ];
   return (
-    <div className="feedback py-3 p-3 bg-[#202028] text-white h-[380px] overflow-scroll w-[38vw] rounded-md mx-6 mb-6 overflow-y-scroll custom-scrollbar">
-      <p className="py-2">Customer's Feedback</p>
+    <div className="feedback py-3 p-3 bg-[#202028] text-white h-[380px] overflow-scroll w-[90vw] sm:w-[84vw] md:w-[35vw] sm:mr-3 sm:ml-16 rounded-md mx-6 md:mx-3 mb-6 overflow-y-scroll custom-scrollbar">
+      <p className="py-1 mb-1 text-white font-bold text-xl">
+        Customer's Feedback
+      </p>
       {userFeedbacks.map((data, i) => {
         return (
           <div className="flex flex-col gap-2">

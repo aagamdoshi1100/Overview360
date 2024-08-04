@@ -5,8 +5,8 @@ import ProgressCircle from "./ProgressCircle";
 
 const NetProfit = () => {
   return (
-    <section className="NetProfits flex bg-[#202028] ml-6 mb-3 p-3 text-white rounded-md justify-between w-[38vw]">
-      <div>
+    <section className="NetProfits flex sm:flex-col md:flex-row bg-[#202028] sm:ml-6 sm:mb-3 p-3 text-white rounded-md justify-between w-[90vw] sm:w-[40vw] md:w-[35vw]">
+      <div className="Data">
         <p className="text-[12px]">Net Profit</p>
         <p className="font-bold text-2xl">
           $ {utilies.randomNumberGenerator(9000, 1000)}.30
@@ -18,8 +18,8 @@ const NetProfit = () => {
           </span>
         </div>
       </div>
-      <div className="">
-        <div className="progress relative ml-8 ">
+      <div className="ProgressBar sm:mt-5">
+        <div className="progress relative ml-8">
           <p className="absolute top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] flex flex-col">
             <span className="percentage fone-bold text-[16px] text-center">
               75%
