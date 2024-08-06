@@ -13,18 +13,18 @@ function App() {
     <div className="App bg-[#141416]">
       <div className="flex">
         <SideBar />
-        <div className="flex flex-col">
-          <TopBar />
-          <div className="flex flex-col w-[100vw] items-center mt-16 sm:flex-row">
+        <TopBar />
+        <div className="flex flex-col w-[100vw] sm:w-[calc(100vw-60px)] sm:ml-20 gap-3 sm:gap-5 mb-3">
+          <div className="flex flex-col items-center sm:flex-row  gap-3 sm:gap-5 mt-20">
             <KeyMetrics />
             <NetProfit />
           </div>
-          <div className="flex flex-col md:flex-row w-[100vw] items-center">
+          <div className="flex flex-col md:flex-row items-center sm:items-start sm:mt-3   gap-3 sm:gap-5">
             <Activity />
             <HighlightsSection />
           </div>
 
-          <div className="flex flex-col w-[100vw] md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center sm:items-start sm:my-3   gap-3 sm:gap-5">
             <RecentOrders />
             <CustomerFeedback />
           </div>

@@ -74,8 +74,8 @@ export const data = {
 
 const Activity = () => {
   return (
-    <div className="activity bg-[#202028] w-[90vw] sm:w-[84vw] md:w-[50vw] p-3 mt-3 sm:ml-16 md:ml-20 rounded-md sm:mr-3 sm:mb-3 ">
-      <div className="flex justify-between">
+    <div className="activity bg-[#202028] w-[90vw] sm:w-[84vw] md:w-[50vw] p-3  rounded-md md:h-full md:flex md:items-center md:justify-center md:flex-col">
+      <div className="flex justify-between md:w-full">
         <h3 className="activity text-xl font-bold text-white">Activity</h3>
         <h4 className="text-sm text-white rounded-3xl p-1 px-3 border-1 border-gray-500 bg-[#4c4d52] inline-flex items-center justify-center">
           Weekly

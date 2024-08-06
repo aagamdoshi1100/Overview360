@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { MdMailOutline } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { VscBellDot } from "react-icons/vsc";
 import { faker } from "@faker-js/faker";
+import { CiMenuFries } from "react-icons/ci";
+import BarMenus from "./BarMenus";
 
 const TopBar = () => {
+  const [menus, setMenus] = useState(false);
   return (
     <div className="all-menus bg-[rgba(32,32,40,255)] w-[100vw] h-14 flex justify-between fixed z-10">
-      <div className="left-menus">
+      <div className="left-menus sm:ml-14">
         <span className="relative">
           <input
             type="text"
@@ -18,7 +21,15 @@ const TopBar = () => {
           <FiSearch className="absolute top-1 left-8 text-[#818283]" />
         </span>
       </div>
-      <div className="right-menus flex gap-2 items-center pr-8">
+      <div className="mobile-view-menu sm:hidden">
+        <CiMenuFries
+          size="1.6em"
+          className="text-white m-3 cursor-pointer"
+          onClick={() => setMenus(!menus)}
+        />
+      </div>
+      {menus && <BarMenus />}
+      <div className="right-menus hidden sm:flex gap-2 items-center pr-8">
         <span className="rounded-full bg-[#444549] h-8 w-8 p-[6px] ">
           <MdMailOutline style={{ color: "#818283", fontSize: "1.2em" }} />
         </span>
