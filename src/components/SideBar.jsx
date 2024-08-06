@@ -28,7 +28,7 @@ const SideBar = () => {
           />
         </span>
         <span className="border-l-2 border-[rgba(32,32,40,255)] px-3">
-          <GrCompliance style={{ color: "#818283", fontSize: "1.6em" }} />{" "}
+          <GrCompliance style={{ color: "#818283", fontSize: "1.6em" }} />
         </span>
 
         <span className="border-l-2 border-[rgba(32,32,40,255)] px-3">
@@ -37,11 +37,11 @@ const SideBar = () => {
               color: "#818283",
               fontSize: "1.6em",
             }}
-          />{" "}
+          />
         </span>
 
         <span className="border-l-2 border-[rgba(32,32,40,255)] px-3">
-          <TbShoppingBagCheck style={{ color: "#818283", fontSize: "1.6em" }} />{" "}
+          <TbShoppingBagCheck style={{ color: "#818283", fontSize: "1.6em" }} />
         </span>
       </div>
       <div className="bottom-menus cursor-pointer">

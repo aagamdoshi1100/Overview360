@@ -2,38 +2,7 @@ import React from "react";
 import { GoTriangleUp } from "react-icons/go";
 import { GoTriangleDown } from "react-icons/go";
 import { utilies } from "../utils/utils";
-import { TbBasketPlus } from "react-icons/tb";
-import { TbShoppingBagCheck } from "react-icons/tb";
-import { TbShoppingBagX } from "react-icons/tb";
-import { GiProfit } from "react-icons/gi";
-
-const metrics = [
-  {
-    icon: TbBasketPlus,
-    iconBGDefaultColor: "bg-[#283368]",
-    cardName: "Total Orders",
-    isPositive: true,
-  },
-
-  {
-    icon: TbShoppingBagCheck,
-    iconBGDefaultColor: "bg-[#165246]",
-    cardName: "Total Delivered",
-    isPositive: false,
-  },
-  {
-    icon: TbShoppingBagX,
-    iconBGDefaultColor: "bg-[#bb4d4f]",
-    cardName: "Total Cancelled",
-    isPositive: true,
-  },
-  {
-    icon: GiProfit,
-    iconBGDefaultColor: "bg-[#5b2a4a]",
-    cardName: "Total Revenue",
-    isPositive: false,
-  },
-];
+import { metrics } from "../Data";
 
 const KeyMetrics = () => {
   return (

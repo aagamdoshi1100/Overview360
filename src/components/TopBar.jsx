@@ -6,22 +6,29 @@ import { VscBellDot } from "react-icons/vsc";
 import { faker } from "@faker-js/faker";
 import { CiMenuFries } from "react-icons/ci";
 import BarMenus from "./BarMenus";
+import { PiSquaresFourFill } from "react-icons/pi";
 
 const TopBar = () => {
   const [menus, setMenus] = useState(false);
   return (
     <div className="all-menus bg-[rgba(32,32,40,255)] w-[100vw] h-14 flex justify-between fixed z-10">
-      <div className="left-menus sm:ml-14">
+      <div className="left-menus flex items-center sm:ml-14">
+        <span className="ml-3 sm:hidden">
+          <PiSquaresFourFill
+            className=""
+            style={{ color: "rgba(112,148,254,255)", fontSize: "2.2em" }}
+          />
+        </span>
         <span className="relative">
           <input
             type="text"
             placeholder="Search"
-            className="search ml-6 mt-4 rounded-sm pl-7 text-[12px] p-1 bg-[#2a2b30]"
+            className="search ml-2 rounded-sm pl-7 text-[12px] p-1 bg-[#2a2b30] text-white"
           />
-          <FiSearch className="absolute top-1 left-8 text-[#818283]" />
+          <FiSearch className="absolute top-1 left-3 text-[#818283]" />
         </span>
       </div>
-      <div className="mobile-view-menu sm:hidden">
+      <div className="mobile-view-menu  flex items-center  sm:hidden">
         <CiMenuFries
           size="1.6em"
           className="text-white m-3 mr-5 cursor-pointer"

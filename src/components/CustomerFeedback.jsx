@@ -1,47 +1,9 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
+import { userFeedbacks } from "../Data";
 
 const CustomerFeedback = () => {
-  let userFeedbacks = [
-    {
-      avtar: faker.image.avatar(),
-      customer: faker.person.fullName(),
-      ratings: faker.number.int({ min: 1, max: 5 }),
-      feedback: faker.lorem.paragraph(),
-    },
-    {
-      avtar: faker.image.avatar(),
-      customer: faker.person.fullName(),
-      ratings: faker.number.int({ min: 1, max: 5 }),
-      feedback: faker.lorem.paragraph(),
-    },
-    {
-      avtar: faker.image.avatar(),
-      customer: faker.person.fullName(),
-      ratings: faker.number.int({ min: 1, max: 5 }),
-      feedback: faker.lorem.paragraph(),
-    },
-    {
-      avtar: faker.image.avatar(),
-      customer: faker.person.fullName(),
-      ratings: faker.number.int({ min: 1, max: 5 }),
-      feedback: faker.lorem.paragraph(),
-    },
-    {
-      avtar: faker.image.avatar(),
-      customer: faker.person.fullName(),
-      ratings: faker.number.int({ min: 2, max: 5 }),
-      feedback: faker.lorem.sentence(),
-    },
-    {
-      avtar: faker.image.avatar(),
-      customer: faker.person.fullName(),
-      ratings: faker.number.int({ min: 2, max: 5 }),
-      feedback: faker.lorem.paragraph({ min: 3, max: 5 }),
-    },
-  ];
   return (
     <div className="feedback py-3 p-3 bg-[#202028] text-white h-[380px] overflow-scroll w-[90vw] sm:w-[84vw] md:w-[35vw] rounded-md overflow-y-scroll custom-scrollbar">
       <p className="py-1 mb-1 text-white font-bold text-xl">
@@ -49,7 +11,7 @@ const CustomerFeedback = () => {
       </p>
       {userFeedbacks.map((data, i) => {
         return (
-          <div className="flex flex-col gap-2">
+          <div key={i} className="flex flex-col gap-2">
             <p className="flex items-center">
               <span>
                 <img
@@ -74,7 +36,7 @@ const CustomerFeedback = () => {
             <p className="text-[12px]">{data.feedback}</p>
             {i !== userFeedbacks.length - 1 && (
               <hr className="pb-2 border-[#3b3b43]" />
-            )}{" "}
+            )}
           </div>
         );
       })}

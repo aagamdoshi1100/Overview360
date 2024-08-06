@@ -60,19 +60,14 @@ export const data = {
   datasets: [
     {
       label: "Activities",
-      data: labels.map(() => faker.datatype.number({ min: 2, max: 15 })),
+      data: labels.map(() => faker.number.int({ min: 2, max: 15 })),
       backgroundColor: "rgba(114,148,254,255)",
-      // borderRadius: {
-      //   topLeft: 50,
-      //   topRight: 50,
-      //   bottomLeft: 50,
-      //   bottomRight: 50,
-      // },
     },
   ],
 };
 
 const Activity = () => {
+  console.log(faker);
   return (
     <div className="activity bg-[#202028] w-[90vw] sm:w-[84vw] md:w-[50vw] p-3  rounded-md md:h-full md:flex md:items-center md:justify-center md:flex-col">
       <div className="flex justify-between md:w-full">

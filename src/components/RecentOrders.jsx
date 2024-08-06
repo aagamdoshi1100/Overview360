@@ -1,50 +1,6 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { recentPlacedOrders } from "../Data";
 
-let recentPlacedOrders = [
-  {
-    avtar: faker.image.avatar(),
-    customer: faker.person.fullName(),
-    orderNo: faker.number.int({ min: 100000, max: 900000 }),
-    amount: faker.number.float({ min: 1000, max: 10000, multipleOf: 0.01 }),
-    status: "Delivered",
-  },
-  {
-    avtar: faker.image.avatar(),
-    customer: faker.person.fullName(),
-    orderNo: faker.number.int({ min: 100000, max: 900000 }),
-    amount: faker.number.float({ min: 1000, max: 10000, multipleOf: 0.01 }),
-    status: "Delivered",
-  },
-  {
-    avtar: faker.image.avatar(),
-    customer: faker.person.fullName(),
-    orderNo: faker.number.int({ min: 100000, max: 900000 }),
-    amount: faker.number.float({ min: 1000, max: 10000, multipleOf: 0.01 }),
-    status: "Cancelled",
-  },
-  {
-    avtar: faker.image.avatar(),
-    customer: faker.person.fullName(),
-    orderNo: faker.number.int({ min: 100000, max: 900000 }),
-    amount: faker.number.float({ min: 1000, max: 10000, multipleOf: 0.01 }),
-    status: "Cancelled",
-  },
-  {
-    avtar: faker.image.avatar(),
-    customer: faker.person.fullName(),
-    orderNo: faker.number.int({ min: 100000, max: 900000 }),
-    amount: faker.number.float({ min: 1000, max: 10000, multipleOf: 0.01 }),
-    status: "Delivered",
-  },
-  {
-    avtar: faker.image.avatar(),
-    customer: faker.person.fullName(),
-    orderNo: faker.number.int({ min: 100000, max: 900000 }),
-    amount: faker.number.float({ min: 1000, max: 10000, multipleOf: 0.01 }),
-    status: "Delivered",
-  },
-];
 const RecentOrders = () => {
   return (
     <div className="recent-orders p-3 bg-[#202028] w-[90vw] sm:w-[84vw] md:w-[50vw] rounded-md">
