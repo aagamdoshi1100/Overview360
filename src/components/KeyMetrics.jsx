@@ -38,7 +38,6 @@ const metrics = [
 const KeyMetrics = () => {
   return (
     <section className="metrixes flex flex-col md:flex-row w-[90vw] sm:w-[40vw] md:w-[50vw] md:h-full gap-3">
-      {/* <p className="heading font-bold text-xl text-white mb-3">Dashboard</p> */}
       {metrics.map((data, i) => {
         const IconComponent = data.icon;
         return (

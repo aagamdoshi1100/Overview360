@@ -15,7 +15,12 @@ function App() {
         <SideBar />
         <TopBar />
         <div className="flex flex-col w-[100vw] sm:w-[calc(100vw-60px)] sm:ml-20 gap-3 sm:gap-5 mb-3">
-          <div className="flex flex-col items-center sm:flex-row  gap-3 sm:gap-5 mt-20">
+          <div className="flex flex-col ml-5 sm:ml-0 sm:flex-row  gap-3 sm:gap-5 mt-16 sm:mt-20">
+            <p className="heading font-bold text-[24px] sm:text-[30px] text-white">
+              Dashboard
+            </p>
+          </div>
+          <div className="flex flex-col items-center sm:flex-row  gap-3 sm:gap-5">
             <KeyMetrics />
             <NetProfit />
           </div>

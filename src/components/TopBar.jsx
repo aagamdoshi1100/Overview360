@@ -24,11 +24,11 @@ const TopBar = () => {
       <div className="mobile-view-menu sm:hidden">
         <CiMenuFries
           size="1.6em"
-          className="text-white m-3 cursor-pointer"
+          className="text-white m-3 mr-5 cursor-pointer"
           onClick={() => setMenus(!menus)}
         />
       </div>
-      {menus && <BarMenus />}
+      {menus && <BarMenus handleChange={setMenus} />}
       <div className="right-menus hidden sm:flex gap-2 items-center pr-8">
         <span className="rounded-full bg-[#444549] h-8 w-8 p-[6px] ">
           <MdMailOutline style={{ color: "#818283", fontSize: "1.2em" }} />
